@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DAR — Fundación cristiana sin fines de lucro que trabaja por la dignificación de niñas, niños, adolescentes y jóvenes en condiciones de vulnerabilidad en Colombia." />
+  <title>DAR | Fundación — Dignificando vidas</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Configuración de Tailwind para mantener la paleta DAR -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            amarillo:   '#EBC200',
+            morado:     '#552D5D',
+            'verde-agua':'#75B3B4',
+            naranja:    '#AF5120',
+          },
+          fontFamily: {
+            okine: ['"Okine Sans"', 'Georgia', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- CSS personalizado (animaciones, @font-face, etc.) -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER Y NAVEGACIÓN FIJA
+       ============================================================ -->
+  <header id="header" role="banner">
+    <!-- Logo DAR -->
+    <a href="#hero" class="nav-logo" aria-label="Inicio DAR Fundación">
+      <img
+        src="assets/images/PNG/Logo DAR fondo transparente-03.png"
+        alt="Logo DAR Fundación"
+        width="160"
+        height="52"
+      />
+    </a>
+
+    <!-- Menú hamburguesa (móvil) -->
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Links de navegación -->
+    <nav id="nav-menu" aria-label="Menú principal">
+      <ul class="nav-links">
+        <li><a href="#conocenos">Conócenos</a></li>
+        <li><a href="#voluntariado">Voluntariado</a></li>
+        <li><a href="#sostenibilidad">Sostenibilidad</a></li>
+        <li><a href="#footer">Comunidad</a></li>
+        <li>
+          <a
+            href="https://link.mercadopago.com.co/darfundacion"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-donar"
+            aria-label="Ir a página de donación"
+          >
+            ❤ Donar
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============================================================
+       BOTÓN FLOTANTE WHATSAPP
+       ============================================================ -->
+  <a
+    id="whatsapp-float"
+    href="https://wa.me/573134329967?text=Hola%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20la%20Fundaci%C3%B3n%20DAR"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar por WhatsApp"
+    title="Escríbenos por WhatsApp"
+  >
+    <img src="assets/images/WhatsApp Image.jpeg" alt="WhatsApp" />
+  </a>
+
+  <!-- ============================================================
+       HERO SECTION
+       ============================================================ -->
+  <section id="hero" aria-label="Bienvenida">
+    <!-- Fondo con imagen + overlay -->
+    <div class="hero-bg" role="presentation"></div>
+
+    <div class="hero-content">
+      <!-- Logo grande a la izquierda -->
+      <div class="hero-logo fade-in-left">
+        <img
+          src="assets/images/PNG/Logo DAR fondo transparente-05.png"
+          alt="DAR Fundación"
+          width="300"
+        />
+      </div>
+
+      <!-- Texto y CTA a la derecha -->
+      <div class="hero-text fade-in-right delay-2">
+        <h1>
+          Somos <span>DAR</span>, una fundación que ayuda a
+          los <span>necesitados</span>
+        </h1>
+
+        <a href="#conocenos" class="btn-primary">Conocer más</a>
+
+        <!-- Redes sociales -->
+        <div class="hero-social" role="list" aria-label="Redes sociales">
+          <a
+            href="https://www.instagram.com/darfundacion/"
+            target="_blank"
+            rel="noopener noreferrer"
+            role="listitem"
+            aria-label="Instagram de DAR"
+          >
+            <img src="assets/images/Logo Instagram.jpeg" alt="Instagram" />
+          </a>
+
+          <a
+            href="https://www.facebook.com/darfundacion/"
+            target="_blank"
+            rel="noopener noreferrer"
+            role="listitem"
+            aria-label="Facebook  de DAR"
+          >
+            <img src="assets/images/Logo Facebook.jpeg" alt="Facebook" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECCIÓN CONÓCENOS
+       ============================================================ -->
+  <section id="conocenos" aria-label="Conócenos">
+    <div class="section-container">
+
+      <!-- Quiénes somos -->
+      <div class="quienes-grid">
+        <div class="quienes-img fade-in-left">
+          <img
+            src="assets/images/barbero.jpeg"
+            alt="Voluntario de DAR cortando el cabello a un beneficiario"
+            loading="lazy"
+          />
+        </div>
+        <div class="fade-in-right delay-2">
+          <p class="section-label">Quiénes somos</p>
+          <h2 class="section-title">Una historia de amor en construcción</h2>
+          <p style="font-size:1.05rem;line-height:1.85;color:#444;">
+            Somos un proyecto social en construcción, sin fines de lucro iniciado el 19 de
+            marzo del 2023 que trabaja por la <strong>dignificación de niñas, niños,
+            adolescentes y jóvenes en condiciones de vulnerabilidad en Colombia</strong>,
+            mediante acciones de voluntarios capacitados, consolidación de alianzas
+            estratégicas con entidades públicas y privadas, y atención oportuna y concreta
+            que contribuya al mejoramiento de la calidad de vida de dicha población a través
+            de un enfoque cristocéntrico e integral.
+          </p>
+        </div>
+      </div>
+
+      <!-- Misión y Visión -->
+      <div class="mision-vision fade-in-up">
+        <div>
+          <h3 class="mv-title">Misión</h3>
+          <p class="mv-text">
+            Dignificar a niñas, niños, adolescentes y jóvenes en condiciones de
+            vulnerabilidad en Colombia, mediante un enfoque cristocéntrico que transforme
+            y genere transformaciones estructurales en su calidad de vida.*
+          </p>
+        </div>
+        <div class="mv-divider" role="separator"></div>
+        <div>
+          <h3 class="mv-title">Visión</h3>
+          <p class="mv-text">
+            Para 2030, DAR será una organización sostenible y autosuficiente con sedes
+            físicas en Colombia y países de la región, reconocida nacional e
+            internacionalmente por su trabajo en la dignificación y transformación de
+            condiciones de vulnerabilidad en niñas, niños, adolescentes y jóvenes.
+          </p>
+        </div>
+      </div>
+
+      <!-- Objetivos -->
+      <div class="fade-in-up">
+        <p class="section-label" style="margin-top:1rem;">Nuestro propósito</p>
+        <h2 class="section-title">Objetivos estratégicos</h2>
+      </div>
+      <div class="objetivos-grid">
+        <div class="objetivo-card fade-in-up delay-1" data-num="01">
+          <p>Reconocer a la población objetivo como sujeto de derechos.</p>
+        </div>
+        <div class="objetivo-card fade-in-up delay-2" data-num="02">
+          <p>Mejorar su calidad de vida mediante un modelo de intervención cristocéntrico e integral.</p>
+        </div>
+        <div class="objetivo-card fade-in-up delay-3" data-num="03">
+          <p>Contar con voluntarios apasionados y capacitados para el servicio.</p>
+        </div>
+        <div class="objetivo-card fade-in-up delay-1" data-num="04">
+          <p>Consolidar un grupo de donantes identificado y comprometido con la causa.</p>
+        </div>
+        <div class="objetivo-card fade-in-up delay-2" data-num="05">
+          <p>Generar alianzas estratégicas con actores que se alineen a la misión institucional.</p>
+        </div>
+        <div class="objetivo-card fade-in-up delay-3" data-num="06">
+          <p>Lograr autosuficiencia organizacional para un impacto sostenido y duradero.</p>
+        </div>
+      </div>
+
+      <!-- Fundadora -->
+      <div style="margin-top:5rem;" class="fade-in-up">
+        <p class="section-label">Liderazgo</p>
+        <h2 class="section-title">La persona detrás del sueño</h2>
+      </div>
+      <div class="fundadora-grid">
+        <div class="fundadora-img fade-in-left">
+          <img
+            src="assets/images/Jessy.jpeg"
+            alt="Jessica Suarez, fundadora de DAR"
+            loading="lazy"
+          />
+        </div>
+        <div class="fundadora-texto fade-in-right delay-2">
+          <h3 class="fundadora-nombre">Jessica Suárez</h3>
+          <p class="fundadora-bio">
+            Jessica Suarez es una mujer profundamente empática, servicial, analítica,
+            solidaria y trascendental, comprometida de manera apasionada con la
+            transformación social. Cree firmemente en el valor sagrado e inherente de
+            cada ser humano sin excepción, la fuerza del amor y el poder de la acción
+            colectiva. Sueña con abrir caminos, construir puentes y transformar vidas
+            para que niñas, niños, adolescentes y jóvenes en condiciones de
+            vulnerabilidad vivan plenamente. Desea que su trabajo y dedicación tengan
+            un efecto multiplicador que trascienda lo inmediato e inspire a otros para
+            generar un cambio duradero en la sociedad.
+          </p>
+          <blockquote class="fundadora-quote">
+            "Dar es sembrar en otros, pero también florecer por dentro."
+          </blockquote>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECCIÓN VOLUNTARIADO Y LÍNEAS
+       ============================================================ -->
+  <section id="voluntariado" aria-label="Voluntariado y líneas de acción">
+    <div class="section-container">
+
+      <!-- Intro voluntariado -->
+      <div class="voluntariado-intro">
+        <div class="fade-in-left">
+          <p class="section-label">Únete</p>
+          <h2 class="section-title">Sé el cambio que el<br/>mundo necesita</h2>
+          <p class="voluntariado-text">
+            Del latín <em>voluntarius</em>, que significa "por elección propia". Este proyecto
+            es posible gracias a nuestros voluntarios: personas inquietas, generosas, empáticas
+            y altruistas. Sus acciones impactan positivamente la vida de otros y, a la vez,
+            les permiten así mismos avivar su humanidad, potenciar sus dones y talentos y
+            pertenecer a una comunidad que cree en el poder de la acción colectiva. Te
+            invitamos a que te sumes como voluntario(a) y seas parte del cambio que el
+            mundo necesita.
+          </p>
+          <a
+            href="https://wa.me/573134329967?text=Quiero%20ser%20voluntario(a)%20en%20DAR"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-primary"
+            style="margin-top:2rem;display:inline-block;"
+          >
+            Quiero ser voluntario(a)
+          </a>
+        </div>
+        <div class="voluntariado-img fade-in-right delay-2">
+          <!-- Usando la foto de Jessy como imagen de voluntariado (reemplazar con Voluntarios.jpg cuando esté disponible) -->
+          <img
+            src="assets/images/Voluntarios.jpeg"
+            alt="Voluntarios de DAR en acción"
+            loading="lazy"
+          />
+        </div>
+      </div>
+
+      <!-- Líneas de acción -->
+      <div class="fade-in-up">
+        <p class="section-label">Cómo actuamos</p>
+        <h2 class="section-title">Nuestras líneas de acción</h2>
+      </div>
+
+      <div class="lineas-grid">
+
+        <!-- 1. COMPARTIR -->
+        <div class="linea-card fade-in-up delay-1">
+          <div class="linea-icono">
+            <img
+              src="assets/images/ICONOS_DAR/iconos líneas DAR OK-03-03.png"
+              alt="Icono Compartir"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="linea-nombre">Compartir</h3>
+          <p class="linea-texto">
+            Compartir es el primer acto de amor que transforma vidas: un plato de comida
+            caliente, un momento de escucha genuina, una palabra que restaura la dignidad.
+            Aquí extendemos las manos y abrimos el corazón a quienes más lo necesitan,
+            recordando que en cada gesto de generosidad late la imagen de Dios.
+          </p>
+        </div>
+
+        <!-- 2. CAMINAR -->
+        <div class="linea-card fade-in-up delay-2">
+          <div class="linea-icono">
+            <img
+              src="assets/images/ICONOS_DAR/iconos líneas DAR-02.png"
+              alt="Icono Caminar"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="linea-nombre">Caminar</h3>
+          <p class="linea-texto">
+            Nuestra segunda línea busca acompañar a niñas, niños, adolescentes y jóvenes
+            que quieran y decidan, en cualquiera de nuestras entregas de COMPARTIR,
+            reincorporarse a su núcleo familiar, ingresar a una institución de
+            rehabilitación o centro de acogida a través del acompañamiento de un/a
+            voluntario(a) durante dicho proceso y con la dirección del equipo psicosocial
+            de la iniciativa.
+          </p>
+        </div>
+
+        <!-- 3. AYUDAR -->
+        <div class="linea-card fade-in-up delay-3">
+          <div class="linea-icono">
+            <img
+              src="assets/images/ICONOS_DAR/iconos líneas DAR-04.png"
+              alt="Icono Ayudar"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="linea-nombre">Ayudar</h3>
+          <p class="linea-texto">
+            Esta línea pretende atender las condiciones de vulnerabilidad en niñas, niños,
+            adolescentes y jóvenes que no quieran reincorporarse sino que además, busquen
+            mejorar su calidad de vida a través del acompañamiento de voluntarios y
+            potenciando sus capacidades con la ayuda de herramientas y acciones que
+            generen transformaciones estructurales a largo plazo para el beneficio.
+          </p>
+        </div>
+
+        <!-- 4. PESCAR -->
+        <div class="linea-card fade-in-up delay-4">
+          <div class="linea-icono">
+            <img
+              src="assets/images/ICONOS_DAR/iconos líneas DAR-01.png"
+              alt="Icono Pescar"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="linea-nombre">Pescar</h3>
+          <p class="linea-texto">
+            Como pescadores de hombres, llevamos la Palabra de Cristo a quienes viven en
+            las orillas del olvido, sembrando esperanza donde hay desesperanza. Esta línea
+            genera una transformación total — espiritual y terrenal — que convierte vidas
+            rotas en testimonios vivos del poder de la gracia y el amor de Dios.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECCIÓN SOSTENIBILIDAD (MERCH)
+       ============================================================ -->
+  <section id="sostenibilidad" aria-label="Sostenibilidad y merchandising">
+    <div class="section-container">
+      <p class="section-label">Sostenibilidad</p>
+      <h2 class="section-title fade-in-up">Viste el cambio.<br/>Apoya la causa.</h2>
+      <p class="merch-desc fade-in-up delay-1">
+        Cada producto de nuestra colección lleva impreso el propósito de DAR.
+        Al adquirir nuestra mercancía, no solo llevas un objeto contigo:
+        <strong>llevas una historia, una esperanza y un impacto real</strong>
+        en la vida de niñas, niños y jóvenes en Colombia.
+        ¡Únete a la comunidad de quienes deciden dar con estilo!
+      </p>
+      <a href="merch.html" class="btn-merch fade-in-up delay-2">
+        <span>Saber más</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+
+      <!-- Tags decorativos -->
+      <div class="merch-decoration fade-in-up delay-3">
+        <span class="merch-tag">🎽 Camisetas</span>
+        <span class="merch-tag">🧢 Gorras</span>
+        <span class="merch-tag">👜 Tote bags</span>
+        <span class="merch-tag">☕ Mugs</span>
+        <span class="merch-tag">📒 Agendas</span>
+        <span class="merch-tag">🔖 Pines</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER — COMUNIDAD
+       ============================================================ -->
+  <footer id="footer" role="contentinfo">
+    <div class="footer-grid">
+
+      <!-- Columna 1: Marca -->
+      <div class="footer-brand">
+        <img
+          src="assets/images/PNG/Logo DAR fondo transparente-04.png"
+          alt="DAR Fundación"
+          width="120"
+        />
+        <p>
+          Una fundación cristiana sin fines de lucro que trabaja por la dignificación
+          de niñas, niños, adolescentes y jóvenes en condiciones de vulnerabilidad
+          en Colombia.
+        </p>
+      </div>
+
+      <!-- Columna 2: Links rápidos -->
+      <nav aria-label="Links rápidos">
+        <div class="footer-col">
+          <h4>Explorar</h4>
+          <ul>
+            <li><a href="#conocenos">Conócenos</a></li>
+            <li><a href="#voluntariado">Voluntariado</a></li>
+            <li><a href="#sostenibilidad">Sostenibilidad</a></li>
+            <li><a href="merch.html">Merch DAR</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Columna 3: Contacto y redes -->
+      <div class="footer-col">
+        <h4>Comunidad</h4>
+        <p style="font-size:0.85rem;margin-bottom:1rem;opacity:0.7;">
+          Síguenos y forma parte de la conversación
+        </p>
+        <div class="footer-social" role="list" aria-label="Redes sociales">
+          <a
+            href="https://www.instagram.com/darfundacion/"
+            target="_blank"
+            rel="noopener noreferrer"
+            role="listitem"
+            aria-label="Instagram"
+          >
+            <img src="assets/images/Logo instagram.jpeg" alt="Instagram" />
+          </a>
+          <a
+            href="https://www.youtube.com/@darfundacion"
+            target="_blank"
+            rel="noopener noreferrer"
+            role="listitem"
+            aria-label="YouTube"
+          >
+            <img src="assets/images/Icono Youtube.jpeg" alt="YouTube" />
+          </a>
+          <a
+            href="https://wa.me/573134329967"
+            target="_blank"
+            rel="noopener noreferrer"
+            role="listitem"
+            aria-label="WhatsApp"
+          >
+            <img src="assets/images/WhatsApp Image.jpeg" alt="WhatsApp" />
+          </a>
+        </div>
+
+        <p style="margin-top:1.2rem;font-size:0.85rem;opacity:0.7;">
+          📍 Colombia<br/>
+          📱 +57 313 432 9967
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer bottom -->
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Fundación DAR. Todos los derechos reservados.</span>
+      <span>Hecho con ❤️ para Colombia</span>
+    </div>
+  </footer>
+
+  <!-- JavaScript principal -->
+  <script src="js/main.js"></script>
+</body>
+</html>
